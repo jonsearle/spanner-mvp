@@ -94,6 +94,7 @@ export default function BookPage() {
             <div className="flex gap-3 p-3 flex-wrap pr-4">
               {days.map(date => {
                 const isBooked = bookedDates.includes(date);
+                const dayName = new Date(date).toLocaleDateString('en-US', { weekday: 'long' });
                 return (
                   <button
                     key={date}
@@ -101,7 +102,7 @@ export default function BookPage() {
                     disabled={isBooked || loading}
                     onClick={() => handleBook(date)}
                   >
-                    <p className="text-sm font-medium leading-normal">{isBooked ? `${date} - Unavailable` : date}</p>
+                    <p className="text-lg font-medium leading-normal">{isBooked ? `${dayName} - Unavailable` : dayName}</p>
                   </button>
                 );
               })}
