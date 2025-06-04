@@ -16,7 +16,7 @@ export default function Home() {
           />
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#fff7e6] text-center tracking-tight mb-2">Bookings made simple.<br className="hidden sm:block" /> Built for garages.</h1>
           <p className="text-lg sm:text-xl text-[#fff7e6] text-center font-medium mb-6">
-            Spannr helps independent garages take bookings online without the faff. Whether you're after a lightweight booking link or a full web presence, Spannr gives you the tools to manage your schedule, stay organised, and keep customers coming back.
+            Spannr helps independent garages take bookings online without the faff. Whether you&apos;re after a lightweight booking link or a full web presence, Spannr gives you the tools to manage your schedule, stay organised, and keep customers coming back.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
             <Link href="/book" className="flex-1 min-w-[160px] rounded-full bg-[#fff7e6] text-[#d14f3f] text-lg font-bold py-3 px-6 text-center shadow hover:bg-white transition">Book Now</Link>
